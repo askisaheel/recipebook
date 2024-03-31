@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavour Fusion</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand text-danger font-weight-bold" href="index.html"
+            >Flavour Fusion - Recipe Book</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recipe-categories">Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-section text-center text-white py-5 bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h1 class="display-4 mb-3">Welcome to Flavour Fusion</h1>
+            <p class="lead">
+              Unlock the secrets of delicious cuisine with our curated
+              collection of recipes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section py-5" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4">About Us</h2>
+            <p>
+              At Flavour Fusion, we are passionate about food and bringing
+              people together through the joy of cooking and sharing delicious
+              meals. Our mission is to provide you with a curated collection of
+              recipes that inspire creativity and elevate your culinary
+              experiences.
+            </p>
+            <p>
+              Our team of experienced chefs and food enthusiasts carefully
+              selects each recipe, ensuring that they are not only delicious but
+              also accessible and easy to follow. Whether you're a seasoned chef
+              or just starting out in the kitchen, Flavour Fusion has something
+              for everyone.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="images/About Us.jfif"
+              alt="About Us Image"
+              class="img-fluid rounded-circle mx-auto d-block my-4"
+              style="max-width: 300px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-recipes py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Recipes</h2>
+        <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/Spaghetti Carbonara.jfif"
+                      class="card-img-top"
+                      alt="Spaghetti Carbonara"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Spaghetti Carbonara</h5>
+                      <p class="card-text">
+                        Classic Italian pasta dish made with eggs, cheese,
+                        pancetta, and black pepper. Creamy and delicious!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/Chicken Parmesan.jfif"
+                      class="card-img-top"
+                      alt="Chicken Parmesan"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Parmesan</h5>
+                      <p class="card-text">
+                        Crispy breaded chicken breasts topped with marinara
+                        sauce and melted mozzarella cheese. A crowd-pleasing
+                        favorite!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/Chocolate Lava Cake.jfif"
+                      class="card-img-top"
+                      alt="Chocolate Lava Cake"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Lava Cake</h5>
+                      <p class="card-text">
+                        Decadent dessert with a gooey chocolate center. Serve
+                        warm with a scoop of vanilla ice cream for the ultimate
+                        indulgence.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/Tacos.jfif"
+                      class="card-img-top"
+                      alt="Tacos"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Tacos</h5>
+                      <p class="card-text">
+                        Mexican street food favorite featuring seasoned meat,
+                        fresh veggies, cheese, and salsa, all wrapped in a warm
+                        tortilla.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/Caesar Salad.jfif"
+                      class="card-img-top"
+                      alt="Caesar Salad"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Caesar Salad</h5>
+                      <p class="card-text">
+                        Classic salad made with crisp romaine lettuce, garlic
+                        croutons, Parmesan cheese, and a creamy Caesar dressing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/Berry Smoothie.jfif"
+                      class="card-img-top"
+                      alt="Berry Smoothie"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Berry Smoothie</h5>
+                      <p class="card-text">
+                        Berry-yogurt-orange juice smoothie: quick, healthy
+                        breakfast or snack option. Refreshing blend of flavors
+                        in every sip!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#recipeCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#recipeCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipe-categories py-5" id="recipe-categories">
+      <div class="container">
+        <h2 class="text-center mb-4">Recipe Categories</h2>
+        <div class="row">
+          <div class="col-sm-6 col-md-3 mb-3">
+            <button
+              class="btn btn-primary btn-block filter-button active"
+              data-filter="all"
+            >
+              All
+            </button>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <button
+              class="btn btn-primary btn-block filter-button"
+              data-filter="breakfast"
+            >
+              Breakfast
+            </button>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <button
+              class="btn btn-primary btn-block filter-button"
+              data-filter="lunch"
+            >
+              Lunch
+            </button>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <button
+              class="btn btn-primary btn-block filter-button"
+              data-filter="dinner"
+            >
+              Dinner
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 mb-4 breakfast recipe-card"
+            data-category="breakfast"
+          >
+            <div class="card">
+              <img
+                src="images/Scrambled Eggs with Avocado Toast.jfif"
+                class="card-img-top"
+                alt="Scrambled Eggs with Avocado Toast"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Scrambled Eggs with Avocado Toast</h5>
+                <p class="card-text">
+                  Scrambled eggs with mashed avocado on whole grain toast.
+                  Nutritious and delicious breakfast choice for a great start!
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary view-recipe"
+                  data-toggle="modal"
+                  data-target="#recipeModal1"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal1"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel1"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel1">
+                          Scrambled Eggs with Avocado Toast
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName1">Ingredients:</h4>
+                        <ul>
+                          <li>2 eggs</li>
+                          <li>1 ripe avocado</li>
+                          <li>2 slices of whole grain bread</li>
+                          <li>Salt and pepper to taste</li>
+                        </ul>
+                        <h4 id="modalRecipeName1">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Crack the eggs into a bowl and beat them until well
+                            mixed.
+                          </li>
+                          <li>
+                            Heat a non-stick skillet over medium heat and add
+                            the beaten eggs.
+                          </li>
+                          <li>
+                            Stir the eggs gently with a spatula until they are
+                            cooked through but still moist.
+                          </li>
+                          <li>
+                            While the eggs are cooking, toast the slices of
+                            whole grain bread until golden brown.
+                          </li>
+                          <li>
+                            Mash the ripe avocado in a bowl and season with salt
+                            and pepper to taste.
+                          </li>
+                          <li>
+                            Once the eggs are cooked, remove them from the
+                            skillet and place them on top of the toasted whole
+                            grain bread.
+                          </li>
+                          <li>
+                            Spread the mashed avocado evenly over the scrambled
+                            eggs.
+                          </li>
+                          <li>Serve immediately and enjoy!</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 mb-4 breakfast recipe-card"
+            data-category="breakfast"
+          >
+            <div class="card">
+              <img
+                src="images/Blueberry Pancakes.jfif"
+                class="card-img-top"
+                alt="Blueberry Pancakes"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blueberry Pancakes</h5>
+                <p class="card-text">
+                  Fluffy pancakes filled with juicy blueberries and drizzled
+                  with maple syrup. A classic breakfast favorite that's sure to
+                  satisfy your sweet tooth.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary view-recipe"
+                  data-toggle="modal"
+                  data-target="#recipeModal2"
+                >
+                  View Recipe
+                </button>
+
+                <div
+                  class="modal fade"
+                  id="recipeModal2"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel2"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel2">
+                          Blueberry Pancakes
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName2">Ingredients:</h4>
+                        <ul>
+                          <li>1 cup all-purpose flour</li>
+                          <li>1 tablespoon sugar</li>
+                          <li>1 teaspoon baking powder</li>
+                          <li>1/2 teaspoon baking soda</li>
+                          <li>1/4 teaspoon salt</li>
+                          <li>1 cup buttermilk</li>
+                          <li>1 egg</li>
+                          <li>2 tablespoons melted butter</li>
+                          <li>1 cup fresh blueberries</li>
+                          <li>Maple syrup for serving</li>
+                        </ul>
+                        <h4 id="modalRecipeName2">Instructions:</h4>
+                        <ol>
+                          <li>
+                            In a large mixing bowl, whisk together the flour,
+                            sugar, baking powder, baking soda, and salt.
+                          </li>
+                          <li>
+                            In another bowl, whisk together the buttermilk, egg,
+                            and melted butter.
+                          </li>
+                          <li>
+                            Pour the wet ingredients into the dry ingredients
+                            and stir until just combined. Be careful not to
+                            overmix; a few lumps are okay.
+                          </li>
+                          <li>Gently fold in the fresh blueberries.</li>
+                          <li>
+                            Heat a non-stick skillet or griddle over medium heat
+                            and lightly grease with butter or cooking spray.
+                          </li>
+                          <li>
+                            Pour about 1/4 cup of batter onto the skillet for
+                            each pancake.
+                          </li>
+                          <li>
+                            Cook until bubbles form on the surface of the
+                            pancakes and the edges look set, then flip and cook
+                            until golden brown on the other side.
+                          </li>
+                          <li>
+                            Serve the pancakes hot with maple syrup drizzled on
+                            top.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 mb-4 breakfast recipe-card"
+            data-category="breakfast"
+          >
+            <div class="card">
+              <img
+                src="images/Greek Yogurt Parfait.jfif"
+                class="card-img-top"
+                alt="Greek Yogurt Parfait"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Greek Yogurt Parfait</h5>
+                <p class="card-text">
+                  Indulge in layers of creamy Greek yogurt, crunchy granola, and
+                  fresh berries—a refreshing and protein-packed breakfast choice
+                  to savor.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary view-recipe"
+                  data-toggle="modal"
+                  data-target="#recipeModal3"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal3"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel3"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel3">
+                          Greek Yogurt Parfait
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName3">Ingredients:</h4>
+                        <ul>
+                          <li>Greek yogurt</li>
+                          <li>Granola</li>
+                          <li>
+                            Fresh berries (such as strawberries, blueberries,
+                            raspberries)
+                          </li>
+                        </ul>
+                        <h4 id="modalRecipeName3">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Begin by layering a few spoonfuls of Greek yogurt
+                            into the bottom of a glass or bowl.
+                          </li>
+                          <li>
+                            Sprinkle a layer of granola on top of the yogurt.
+                          </li>
+                          <li>Add a layer of fresh berries.</li>
+                          <li>
+                            Repeat the layers until the glass or bowl is filled,
+                            finishing with a final layer of berries on top.
+                          </li>
+                          <li>
+                            Serve immediately as a refreshing and protein-packed
+                            breakfast option.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 lunch recipe-card" data-category="lunch">
+            <div class="card">
+              <img
+                src="images/Vegetable Omelette.jfif"
+                class="card-img-top"
+                alt="Vegetable Omelette"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vegetable Omelette</h5>
+                <p class="card-text">
+                  Fluffy omelette filled with sautéed vegetables like bell
+                  peppers, onions, and spinach. A healthy and satisfying
+                  breakfast choice.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#recipeModal4"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal4"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel4"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel4">
+                          Vegetable Omelette
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName4">Ingredients:</h4>
+                        <ul>
+                          <li>2 eggs</li>
+                          <li>
+                            Assorted vegetables (such as bell peppers, onions,
+                            spinach)
+                          </li>
+                          <li>Salt and pepper to taste</li>
+                          <li>Olive oil or butter for cooking</li>
+                        </ul>
+                        <h4 id="modalRecipeName4">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Chop the assorted vegetables into small pieces.
+                          </li>
+                          <li>
+                            Heat a non-stick skillet over medium heat and add a
+                            little olive oil or butter.
+                          </li>
+                          <li>
+                            Add the chopped vegetables to the skillet and sauté
+                            until they are tender.
+                          </li>
+                          <li>
+                            In a separate bowl, beat the eggs until well mixed
+                            and season with salt and pepper.
+                          </li>
+                          <li>
+                            Pour the beaten eggs over the sautéed vegetables in
+                            the skillet.
+                          </li>
+                          <li>
+                            Allow the eggs to cook without stirring until they
+                            are set around the edges.
+                          </li>
+                          <li>
+                            Using a spatula, gently lift the edges of the
+                            omelette and tilt the skillet to let the uncooked
+                            eggs flow underneath.
+                          </li>
+                          <li>
+                            Once the eggs are mostly set but still slightly
+                            runny on top, fold the omelette in half and cook for
+                            another minute or until the eggs are cooked through.
+                          </li>
+                          <li>
+                            Slide the omelette onto a plate and serve hot as a
+                            healthy and satisfying breakfast choice.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 lunch recipe-card" data-category="lunch">
+            <div class="card">
+              <img
+                src="images/Caprese Salad.jfif"
+                class="card-img-top"
+                alt="Caprese Salad"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Caprese Salad</h5>
+                <p class="card-text">
+                  Fresh tomatoes, mozzarella cheese, and basil leaves drizzled
+                  with balsamic glaze. A light and refreshing salad that's
+                  perfect for lunch.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#recipeModal5"
+                >
+                  View Recipe
+                </button>
+
+                <div
+                  class="modal fade"
+                  id="recipeModal5"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel5"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel5">
+                          Caprese Salad
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName5">Ingredients:</h4>
+                        <ul>
+                          <li>Fresh tomatoes</li>
+                          <li>Fresh mozzarella cheese</li>
+                          <li>Fresh basil leaves</li>
+                          <li>Balsamic glaze</li>
+                          <li>Salt and pepper to taste</li>
+                        </ul>
+                        <h4 id="modalRecipeName5">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Slice the tomatoes and fresh mozzarella cheese into
+                            evenly sized slices.
+                          </li>
+                          <li>
+                            Arrange the tomato slices on a serving platter.
+                          </li>
+                          <li>
+                            Place a slice of mozzarella cheese on top of each
+                            tomato slice.
+                          </li>
+                          <li>
+                            Tear the fresh basil leaves and sprinkle them over
+                            the tomatoes and mozzarella.
+                          </li>
+                          <li>Drizzle balsamic glaze over the salad.</li>
+                          <li>Season with salt and pepper to taste.</li>
+                          <li>
+                            Serve immediately as a light and refreshing salad
+                            option.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 lunch recipe-card" data-category="lunch">
+            <div class="card">
+              <img
+                src="images/Quinoa Salad with Chickpeas.jfif"
+                class="card-img-top"
+                alt="Quinoa Salad with Chickpeas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Quinoa Salad with Chickpeas</h5>
+                <p class="card-text">
+                  Nutritious quinoa tossed with chickpeas, cucumbers, tomatoes,
+                  and a lemon vinaigrette dressing. A satisfying and
+                  protein-rich salad option.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#recipeModal6"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal6"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel6"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel6">
+                          Quinoa Salad with Chickpeas
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName6">Ingredients:</h4>
+                        <ul>
+                          <li>Quinoa</li>
+                          <li>Chickpeas (canned or cooked)</li>
+                          <li>Cucumbers, diced</li>
+                          <li>Tomatoes, diced</li>
+                          <li>
+                            Lemon vinaigrette dressing (made with lemon juice,
+                            olive oil, garlic, salt, and pepper)
+                          </li>
+                          <li>
+                            Optional: chopped fresh parsley or cilantro for
+                            garnish
+                          </li>
+                        </ul>
+                        <h4 id="modalRecipeName6">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Cook the quinoa according to package instructions
+                            and let it cool to room temperature.
+                          </li>
+                          <li>
+                            In a large mixing bowl, combine the cooked quinoa,
+                            chickpeas, diced cucumbers, and diced tomatoes.
+                          </li>
+                          <li>
+                            Pour the lemon vinaigrette dressing over the salad
+                            and toss until well combined.
+                          </li>
+                          <li>
+                            Garnish with chopped fresh parsley or cilantro, if
+                            desired.
+                          </li>
+                          <li>
+                            Serve chilled or at room temperature as a satisfying
+                            and protein-rich salad option.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 dinner recipe-card" data-category="dinner">
+            <div class="card">
+              <img
+                src="images//Turkey and Avocado Wrap.jfif"
+                class="card-img-top"
+                alt="Turkey and Avocado Wrap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Turkey and Avocado Wrap</h5>
+                <p class="card-text">
+                  Whole grain wrap filled with sliced turkey breast, creamy
+                  avocado, lettuce, and tomato. A wholesome and portable lunch
+                  option.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#recipeModal7"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal7"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel7"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel7">
+                          Turkey and Avocado Wrap
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName7">Ingredients:</h4>
+                        <ul>
+                          <li>Whole grain wrap or tortilla</li>
+                          <li>Sliced turkey breast</li>
+                          <li>Ripe avocado, sliced</li>
+                          <li>Lettuce leaves</li>
+                          <li>Tomato, sliced</li>
+                        </ul>
+                        <h4 id="modalRecipeName7">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Lay the whole grain wrap or tortilla flat on a clean
+                            surface.
+                          </li>
+                          <li>
+                            Arrange the sliced turkey breast, avocado slices,
+                            lettuce leaves, and tomato slices in the center of
+                            the wrap.
+                          </li>
+                          <li>
+                            Fold in the sides of the wrap and then roll it up
+                            tightly from the bottom.
+                          </li>
+                          <li>
+                            Slice the wrap in half diagonally, if desired.
+                          </li>
+                          <li>
+                            Serve immediately as a wholesome and portable lunch
+                            option.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 dinner recipe-card" data-category="dinner">
+            <div class="card">
+              <img
+                src="images/Vegetable Stir-Fry.jfif"
+                class="card-img-top"
+                alt="Vegetable Stir-Fry"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vegetable Stir-Fry</h5>
+                <p class="card-text">
+                  Colorful medley of stir-fried vegetables like bell peppers,
+                  broccoli, carrots, and snap peas served over brown rice. A
+                  flavorful and nutritious lunch dish.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#recipeModal8"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal8"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel8"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel8">
+                          Vegetable Stir-Fry
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName8">Ingredients:</h4>
+                        <ul>
+                          <li>
+                            Assorted vegetables (such as bell peppers, broccoli,
+                            carrots, snap peas)
+                          </li>
+                          <li>Brown rice, cooked</li>
+                          <li>Soy sauce</li>
+                          <li>Garlic, minced</li>
+                          <li>Ginger, grated</li>
+                          <li>Sesame oil</li>
+                          <li>
+                            Optional: sliced tofu or chicken for added protein
+                          </li>
+                        </ul>
+                        <h4 id="modalRecipeName8">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Heat a wok or large skillet over high heat and add a
+                            little sesame oil.
+                          </li>
+                          <li>
+                            Add the minced garlic and grated ginger to the
+                            skillet and stir-fry for about 30 seconds until
+                            fragrant.
+                          </li>
+                          <li>
+                            Add the assorted vegetables to the skillet and
+                            stir-fry for a few minutes until they are
+                            tender-crisp.
+                          </li>
+                          <li>
+                            If using tofu or chicken, add it to the skillet and
+                            cook until heated through.
+                          </li>
+                          <li>
+                            Season with soy sauce to taste and toss to combine.
+                          </li>
+                          <li>
+                            Serve the stir-fried vegetables over cooked brown
+                            rice.
+                          </li>
+                          <li>
+                            Enjoy immediately as a flavorful and nutritious
+                            lunch dish.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 dinner recipe-card" data-category="dinner">
+            <div class="card">
+              <img
+                src="images/Chicken Alfredo Pasta.jfif"
+                class="card-img-top"
+                alt="Chicken Alfredo Pasta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chicken Alfredo Pasta</h5>
+                <p class="card-text">
+                  Creamy Alfredo sauce tossed with tender chicken breast and
+                  fettuccine pasta. A comforting and indulgent dinner choice for
+                  pasta lovers.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#recipeModal9"
+                >
+                  View Recipe
+                </button>
+                <div
+                  class="modal fade"
+                  id="recipeModal9"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="recipeModalLabel9"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="recipeModalLabel9">
+                          Chicken Alfredo Pasta
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h4 id="modalRecipeName9">Ingredients:</h4>
+                        <ul>
+                          <li>Fettuccine pasta</li>
+                          <li>Chicken breast, cooked and diced</li>
+                          <li>Alfredo sauce (store-bought or homemade)</li>
+                          <li>Salt and pepper to taste</li>
+                          <li>Parmesan cheese for garnish (optional)</li>
+                        </ul>
+                        <h4 id="modalRecipeName9">Instructions:</h4>
+                        <ol>
+                          <li>
+                            Cook the fettuccine pasta according to package
+                            instructions until al dente. Drain and set aside.
+                          </li>
+                          <li>
+                            In a large skillet, heat the Alfredo sauce over
+                            medium heat until warmed through.
+                          </li>
+                          <li>
+                            Add the diced chicken breast to the skillet and stir
+                            until heated.
+                          </li>
+                          <li>
+                            Add the cooked fettuccine to the skillet and toss
+                            until the pasta is evenly coated with the Alfredo
+                            sauce.
+                          </li>
+                          <li>Season with salt and pepper to taste.</li>
+                          <li>
+                            Serve the chicken Alfredo pasta hot, garnished with
+                            grated Parmesan cheese if desired.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accordion-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div id="accordion">
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center cursor-pointer"
+              id="headingOne"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What is Flavour Fusion, and how does it work?
+              <span class="arrow-icon"><i class="fas fa-chevron-up"></i></span>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Flavour Fusion is an online recipe book platform designed for
+                culinary enthusiasts to explore, discover, and share delicious
+                recipes. Users can browse through a diverse collection of
+                recipes from around the world, contribute their own recipes, and
+                engage with a community of fellow food lovers.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center cursor-pointer"
+              id="headingTwo"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Are the recipes on Flavour Fusion suitable for all skill levels?
+              <span class="arrow-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Yes! We strive to make our recipes accessible to cooks of all
+                skill levels, from beginners to experienced chefs. Each recipe
+                comes with clear and easy-to-follow instructions, ensuring that
+                anyone can create delicious dishes in their own kitchen.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center cursor-pointer"
+              id="headingThree"
+              data-toggle="collapse"
+              data-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Can I search for recipes based on dietary preferences or
+              restrictions?
+              <span class="arrow-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Absolutely! Flavour Fusion offers search filters that allow
+                users to find recipes based on specific dietary preferences or
+                restrictions, such as vegetarian, vegan, gluten-free,
+                dairy-free, and more. This makes it easy for users to discover
+                recipes that align with their individual dietary needs.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center cursor-pointer"
+              id="headingFour"
+              data-toggle="collapse"
+              data-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              How often are new recipes added to Flavour Fusion?
+              <span class="arrow-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                We regularly update Flavour Fusion with fresh and exciting
+                recipes from our community of contributors. New recipes are
+                added frequently, providing users with a continuous source of
+                inspiration and culinary delights.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center cursor-pointer"
+              id="headingFive"
+              data-toggle="collapse"
+              data-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              How can I save my favorite recipes on Flavour Fusion for future
+              reference?
+              <span class="arrow-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                With Flavour Fusion, users can create an account to save their
+                favorite recipes for easy access later. Simply click the "Save
+                Recipe" button on any recipe page to add it to your personal
+                collection. This feature allows users to curate their own recipe
+                library and revisit their favorite dishes whenever they like.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Explore</h5>
+            <p>
+              Unlock culinary creativity with Flavour Fusion: Discover, share,
+              and savor recipes from around the world. Join the culinary
+              adventure today!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-white">Home</a></li>
+              <li><a href="#about-section" class="text-white">About Us</a></li>
+              <li>
+                <a href="#recipe-categories" class="text-white">Categories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <address>
+              123 Main Street<br />
+              City, State, Zip<br />
+              Phone: 123-456-7890<br />
+              Email: info@example.com
+            </address>
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+          </div>
+          <div class="col-md-8">
+            <ul class="list-inline text-md-right">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook-f text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/" target="_blank"
+                  ><i class="fab fa-twitter text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><i class="fab fa-linkedin-in text-white"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fab fa-instagram text-white"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & JQuery.. JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

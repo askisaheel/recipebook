@@ -1,0 +1,8 @@
+/* Override Bootstrap button outline */
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.card-header.cursor-pointer {
+  cursor: pointer;
+}
