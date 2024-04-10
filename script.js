@@ -12,34 +12,6 @@ $(window).on('resize', function () {
 })
 
 $(document).ready(function () {
-  // Function to update URL fragment based on the current section in view
-  function updateURLFragment() {
-    var scrollPosition = $(window).scrollTop()
-    var foundSection = false
-
-    $('section').each(function () {
-      var top = $(this).offset().top
-      var bottom = top + $(this).outerHeight()
-
-      if (scrollPosition >= top && scrollPosition < bottom) {
-        var id = $(this).attr('id')
-        history.replaceState(null, null, '#' + id)
-        foundSection = true
-        return false
-      }
-    })
-
-    if (!foundSection) {
-      history.replaceState(null, null, ' ')
-    }
-  }
-
-  $(window).scroll(updateURLFragment)
-
-  updateURLFragment()
-})
-
-$(document).ready(function () {
   // Add smooth scrolling to all links
   $('a').on('click', function (event) {
     if (this.hash !== '') {
